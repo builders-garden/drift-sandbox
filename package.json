@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@buildersgarden/drift": "^0.0.22",
+    "@buildersgarden/drift": "^0.0.23",
     "@rainbow-me/rainbowkit": "^2.1.7",
     "next": "15.0.2",
     "pino-pretty": "^11.3.0",

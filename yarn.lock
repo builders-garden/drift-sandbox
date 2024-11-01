@@ -161,10 +161,10 @@
     "@babel/helper-string-parser" "^7.25.9"
     "@babel/helper-validator-identifier" "^7.25.9"
 
-"@buildersgarden/drift@^0.0.22":
-  version "0.0.22"
-  resolved "https://registry.yarnpkg.com/@buildersgarden/drift/-/drift-0.0.22.tgz#869a5a8bb5491e5880c9b2f23e55e05b4efc9bc9"
-  integrity sha512-d0ZQnGwzkin1o71hxR6ZxPdoZhp+sT2gjzXfE28E9OEho5pBqi32Bc9+6DZseuOqCmbIgS41lvAsmCApg64Aew==
+"@buildersgarden/drift@^0.0.23":
+  version "0.0.23"
+  resolved "https://registry.yarnpkg.com/@buildersgarden/drift/-/drift-0.0.23.tgz#8e74a65650a7f42c072ac10891fbd0f86e8a338d"
+  integrity sha512-gL/7vp3awTcEFjtTkWkrUGlla5q6mqAw5tZ0XP3wLQifGTVkczh75HtJh5gXqLiGwUEHkwvCfow1BAfOk3womw==
   dependencies:
     "@decent.xyz/box-common" "^3.3.9"
     "@decent.xyz/box-hooks" "^3.3.9"
