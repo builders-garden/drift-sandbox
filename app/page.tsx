@@ -263,7 +263,7 @@ export default function Home() {
         <Link href="https://drift.money" target="_blank">
           <div className="text-center text-sm text-gray-500 flex flex-row items-center justify-center gap-1">
             Powered by
-            <Image src="/logo.svg" alt="Drift" width={40} height={20} />
+            <Image src="/logo.svg" alt="Drift" width={40} height={20} radius="none" />
           </div>
         </Link>
       </div>
