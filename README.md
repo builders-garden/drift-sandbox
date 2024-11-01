@@ -1,8 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# DriftPay Sandbox
 
-First, run the development server:
+A Next.js-based sandbox environment for testing and configuring the DriftPay SDK. This application allows developers to experiment with different configurations of the DriftPay button and preview the implementation in real-time.
+
+## Features
+
+- Live configuration of DriftPay button parameters
+- Real-time preview of button implementation
+- Code snippet generation
+- Multi-chain support
+- Wallet integration with RainbowKit
+- Customizable button styling
+
+## Tech Stack
+
+- Next.js 15.0.2
+- React 19
+- TypeScript
+- TailwindCSS
+- NextUI
+- RainbowKit
+- Wagmi
+- Viem
+
+## Prerequisites
+
+- Node.js (Latest LTS version recommended)
+- npm, yarn, or pnpm
+
+## Environment Variables
+
+Create a `.env.local` file in the root directory with the following variables:
+
+```plaintext
+NEXT_PUBLIC_DRIFT_APP_ID=your_drift_app_id
+NEXT_PUBLIC_DRIFT_APP_SECRET=your_drift_app_secret
+NEXT_PUBLIC_DECENT_API_KEY=your_decent_api_key
+```
+
+## Installation
+
+1. Clone the repository
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
@@ -10,28 +59,59 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `/app` - Next.js app router pages and layouts
+- `/components` - Reusable React components
+- `/lib` - Utility functions and configuration
+- `/public` - Static assets
 
-## Learn More
+## Key Components
 
-To learn more about Next.js, take a look at the following resources:
+### DriftPay Button
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The main component that handles payments. Configuration options include:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Amount
+- Recipient address
+- Destination token address
+- Destination chain
+- Custom styling
+- Custom button text
 
-## Deploy on Vercel
+### Supported Chains
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Base
+- Ethereum
+- Polygon
+- Optimism
+- Arbitrum
+- Zora
+- Degen
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# drift-sandbox
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License.
+
+## Support
+
+For support and documentation about the DriftPay SDK, visit:
+
+- [Drift Documentation](https://builders-garden.notion.site/Drift-SDK-Documentation-120679ed099e80e3a31aeb1567e79d12?pvs=4)
+- [Drift Website](https://drift.money)
+
+---
+
+For more detailed information about the implementation, refer to the source code and comments within the repository.
