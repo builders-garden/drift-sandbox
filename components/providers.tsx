@@ -28,6 +28,7 @@ export default function Providers({ children }: { children: React.ReactNode }) {
               appId={process.env.NEXT_PUBLIC_DRIFT_APP_ID as string}
               appSecret={process.env.NEXT_PUBLIC_DRIFT_APP_SECRET as string}
               decentApiKey={process.env.NEXT_PUBLIC_DECENT_API_KEY as string}
+              appAddress={"0x1358155a15930f89eBc787a34Eb4ccfd9720bC62"}
             >
               <main className="h-full">{children}</main>
             </DriftProvider>
